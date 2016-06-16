@@ -5,6 +5,8 @@ gem 'devise', '~> 3.4.0'
 gem 'mini_magick', '~> 3.7.0'
 gem 'gravtastic', '~> 3.2.6'
 
+gem 'rspec-rails', '~> 3.1.0', group: [:development, :test]
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
 # Use sqlite3 as the database for Active Record
