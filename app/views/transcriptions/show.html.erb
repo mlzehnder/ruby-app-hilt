@@ -38,9 +38,8 @@
 </div>
 
 <div class="row">
-  <div class="col-md-12">
-    <h3 class="page-header">Comments</h3>
-  </div>
+<%= link_to 'Edit', edit_transcription_path(@transcription), class: "btn btn-primary" %>
+  <%= link_to 'Back', transcriptions_path, class: "btn btn-success" %>
 </div>
 
 <% @comments.each do |comment| %>

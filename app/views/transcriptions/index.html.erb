@@ -50,7 +50,7 @@
         <p><%= truncate(transcription.description, length: 250) %></p>
         <p>
           <%= link_to 'Edit', edit_transcription_path(transcription), :class => "btn btn-mini btn-primary" %>
-          <%= link_to 'Destroy', transcription, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-mini btn-primary" %>
+          <%= link_to 'Destroy', transcription, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-mini btn-danger" %>
         </p>
       </div>
     </div>
