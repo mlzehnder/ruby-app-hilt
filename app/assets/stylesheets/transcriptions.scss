@@ -1,10 +1,6 @@
 // Place all the styles related to the transcriptions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-$base-color: #AD141E;
-$lightgray: #999;
-$black: #000;
-$white: #FFF;
 
 body {
   padding-top: 100px;
@@ -25,9 +21,6 @@ th {
   width: 100px;
 }
 
-h1 {
-  color: $lightgray;
-}
 
 nav{
   ul{
@@ -37,16 +30,7 @@ nav{
   }
 }
 
-@mixin border-radius($radius) {
-  -webkit-border-radius: $radius;
-  -moz-border-radius: $radius;
-  -ms-border-radius: $radius;
-  border-radius: $radius;
-}
 
-.box{
-  @include border-radius(10px);
-}
 
 @mixin box-shadow($top, $left, $blur, $size, $color, $inset: false) {
   @if $inset {
@@ -60,6 +44,16 @@ nav{
 
   }
 }
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+$base-color: #AD141E;
+$white: #FFF;
 
 .intro-box {
   padding: 10px;
