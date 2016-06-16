@@ -22,8 +22,8 @@ class CommentsController < ApplicationController
   end
 
   # POST /comments
-# POST /comments.json
-def create
+  # POST /comments.json
+  def create
   @comment = Comment.new(comment_params)
   @transcription = @comment.transcription
 

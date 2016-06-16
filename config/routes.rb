@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :comments
+  resources :comments
   devise_for :users
   get 'pages/about'
   get 'about', to: 'pages#about'
